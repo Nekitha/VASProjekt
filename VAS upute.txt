@@ -1,0 +1,22 @@
+Projektna dokumentacija
+
+Projektnu dokumentaciju treba napisati korištenjem LaTeX predloška te obraditi teorijski dio praktičnog rada.
+
+Idealno bi bilo da je u početnom dijelu predstavljen formalizam višeagentnog sustava koji je kroz projekt realiziran (npr. prikazati konačne automate pojedinih agenata, graf strukture, protokole aukcije, moguća stanja agenata s obzirom na moguće svjetove višeagentnog sustava i sl.), korištenjem teorije prikazane na predavanjima.
+
+Dokumentacija treba sadržavati:
+
+    uvod (motivacija zašto baš ta tema),
+    glavni dio teme (uključiti definicije i teoriju na kojoj se temelji opisani formalizam),
+    opis implementacije višeagentnog sustava (opisi pojedinih agenata, korištenih protokola, baza znanja, mogućih stanja agenata i sl. u ovisnosti o vrsti višeagentnog sustava koji se implementira),
+    prikaz rada aplikacije,
+    kritički osvrt na implementirano (praktična izvedivost i primjena),
+    zaključak,
+    literaturu.
+
+Literatura mora sadržavati barem dva znanstvena članka vezana za temu (pretražiti na Google Scholaru, baze.nsk.hr i sl.). Članke treba koristiti prilikom pisanja dokumentacije (ne pisati kritički opis članka, nego iz članka koristiti one dijelove koji su vezani uz projekt). Svaka referenca u literaturi mora biti citirana u tekstu i obrnuto, svaka korištena literatura mora biti u popisu literature. Korišteni izvori trebaju biti referencirani IEEE stilom.
+
+Za pisanje projektne dokumentacije vrijede predložak i Pravilnik o završnom i diplomskom radu. Korištenje tuđeg rješenja (plagijat) i ostali oblici korištenja djela nekog autora bez navođenja izvora su zabranjeni te povlače disciplinsku odgovornost, u skladu s Pravilnikom o stegovnoj i materijalnoj odgovornosti studenata i drugih polaznika Fakulteta organizacije i informatike.
+Aplikacija
+
+Programski kod aplikacije treba postaviti na odgovarajući javni sustav za verzioniranje (npr. GitHub) pod otvorenom licencom (npr. GPL). Poveznicu do programskog koda potrebno je navesti i unutar projektne dokumentacije.

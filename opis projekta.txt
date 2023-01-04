@@ -1,0 +1,11 @@
+Opis teme:
+Implementiran je veći broj agenata s time da svaki igra ulogu u priči. 
+Svaki lik u priči bi imao svoj zadatak i postupke koje može poduzeti. 
+Također bi jedan agent bio implementiran da određuje pobijednike prilikom 
+sukobljavanja između drugih agenata te tako uveo nešto nepredvidivosti u priču.
+
+Heroj
+Kralj/Kraljica
+Princ/Princeza
+Zmaj
+Prostor
