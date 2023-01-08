@@ -6,37 +6,46 @@ import spade
 import narrator
 import hero
 import enemy
-import fate
 import questgiver
 from spade import quit_spade
 
-if __name__ == '__main__':
-    agentNarrator = narrator.Narrator("narrator@localhost", "narrator")
+if __name__ == '__main__':    
     agentHero = hero.Hero("hero@localhost", "hero")
     agentEnemy = enemy.Enemy("enemy@localhost", "enemy")
     agentQuestGiver = questgiver.Questgiver("questgiver@localhost", "questgiver")
-    agentFate = fate.Fate("fate@localhost", "fate")
-    startedUpNarrator = agentNarrator.start()
+    agentNarrator = narrator.Narrator("narrator@localhost", "narrator")
+    
     startedUpHero = agentHero.start()
-    startedUpEnemy = agentEnemy.start()
+    startedUpHero.result()
+    
     startedUpQuestGiver = agentQuestGiver.start()
-    startedUpFate = agentFate.start()
+    startedUpQuestGiver.result()
+
+    startedUpEnemy = agentEnemy.start()
+    startedUpEnemy.result()
+    
+    startedUpNarrator = agentNarrator.start()
+    startedUpNarrator.result()    
+    
     characterAgents = []
-    characterAgents.append(agentNarrator)
+    
     characterAgents.append(agentHero)
     characterAgents.append(agentEnemy)
     characterAgents.append(agentQuestGiver)
-    characterAgents.append(agentFate)
-    startedUpNarrator.result()
-    while agentNarrator.is_alive():
+    characterAgents.append(agentNarrator)
+
+    while agentHero.is_alive() and agentNarrator.storyOver == False:
         try:
             time.sleep(1)
         except KeyboardInterrupt:
             break
-
     for character in characterAgents:
-        character.stop()
+        if character.is_alive() == True:
+            character.stop()
     quit_spade()
     print("\n")
-    print("A massive asteroid wipes out everyone, ending the story prematurely.")
+    if agentNarrator.storyOver == False:
+        print("A massive asteroid wipes out everyone, ending the story prematurely.")
+    else:
+        print("The story is over, thank you for reading.")
 
