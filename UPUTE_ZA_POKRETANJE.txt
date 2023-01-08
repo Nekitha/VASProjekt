@@ -1,0 +1,4 @@
+Aplikacija se pokreće preko linuxove komandnde linije pomoću komande
+python3 StartStory.py
+
+Za rad je potreban instaliran lokalni Prosody poslužitelj te Python sa SPADE bibliotekom
